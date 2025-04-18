@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Daily Academic Survey</h1>
+    <form id="survey-form">
+      <label for="date">Date</label>
+      <input type="date" name="date" id="date" required>
+
+      <label for="absentees-number">Number of Absentees</label>
+      <input type="number" name="absentees_number" id="absentees-number" required>
+
+      <label for="absentees-list">Absentees</label>
+      <textarea name="absentees_list" id="absentees-list" placeholder="List absentees..."></textarea>
+
+      <h2>Class Reports</h2>
+      <div id="class-container"></div>
+
+      <h2>Homework</h2>
+      <textarea name="homework" id="homework"></textarea>
+
+      <h2>Attachments (PDF)</h2>
+      <input type="file" name="attachments" id="attachments" accept="application/pdf">
+
+      <h2>Announcements</h2>
+      <textarea name="announcements" id="announcements"></textarea>
+
+      <h2>Remarks</h2>
+      <textarea name="remarks" id="remarks"></textarea>
+
+      <h2>Notices</h2>
+      <textarea name="notices" id="notices"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
